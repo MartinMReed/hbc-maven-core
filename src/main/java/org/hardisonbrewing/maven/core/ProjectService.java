@@ -258,6 +258,7 @@ public class ProjectService {
         return _filePaths;
     }
 
+    @SuppressWarnings( "unchecked" )
     public static final String[] getResourceFilePaths() {
 
         List<String> resourceFilePaths = new LinkedList<String>();

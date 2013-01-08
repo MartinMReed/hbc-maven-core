@@ -39,6 +39,7 @@ import org.apache.maven.project.artifact.ProjectArtifactMetadata;
 import org.codehaus.plexus.archiver.ArchiverException;
 import org.codehaus.plexus.util.FileUtils;
 
+@SuppressWarnings( "deprecation" )
 public class DependencyService {
 
     protected DependencyService() {
@@ -96,6 +97,7 @@ public class DependencyService {
      * @param dest The destination directory.
      * @throws Exception
      */
+    @SuppressWarnings( "unchecked" )
     public static final void copyDependencies( File dest ) throws Exception {
 
         MavenProject mavenProject = ProjectService.getProject();
@@ -131,6 +133,7 @@ public class DependencyService {
      * @throws ArtifactResolutionException
      * @throws ArtifactNotFoundException
      */
+    @SuppressWarnings( "unchecked" )
     public static final void extractDependencies( MavenProject mavenProject, File dest ) throws Exception {
 
         List<Dependency> dependencies = mavenProject.getDependencies();

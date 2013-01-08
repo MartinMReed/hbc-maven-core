@@ -68,6 +68,7 @@ public class JAXB {
         }
     }
 
+    @SuppressWarnings( "unchecked" )
     public static <T> T unmarshal( InputStream inputStream, Class<T> clazz ) throws JAXBException {
 
         Object object;

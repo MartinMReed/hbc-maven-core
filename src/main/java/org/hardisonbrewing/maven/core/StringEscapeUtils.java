@@ -26,6 +26,7 @@ public class StringEscapeUtils extends org.apache.commons.lang.StringEscapeUtils
         // do nothing
     }
 
+    @SuppressWarnings( "deprecation" )
     public static final String escapeURI( String text ) {
 
         if ( text == null || text.length() == 0 ) {

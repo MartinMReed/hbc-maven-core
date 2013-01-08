@@ -33,6 +33,7 @@ public class PluginService {
      * @param key The Plugin.getKey() in the form of "grouId:artifactId".
      * @return
      */
+    @SuppressWarnings( "unchecked" )
     public static final Plugin getPlugin( String key ) {
 
         for (Plugin plugin : (List<Plugin>) ProjectService.getProject().getBuildPlugins()) {
