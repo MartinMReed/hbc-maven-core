@@ -50,8 +50,10 @@ public class PropertiesService {
     public static final Properties loadProperties( String filePath ) {
 
         File file = new File( filePath );
+
         if ( !file.exists() ) {
-            return null;
+            JoJoMojo.getMojo().getLog().error( "Properties file does not exist: " + filePath );
+            throw new IllegalStateException();
         }
 
         Properties properties = new Properties();

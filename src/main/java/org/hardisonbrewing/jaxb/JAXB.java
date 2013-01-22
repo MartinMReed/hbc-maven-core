@@ -131,7 +131,7 @@ public class JAXB {
         if ( jaxbContext != null ) {
             return jaxbContext;
         }
-        jaxbContext = JAXBContext.newInstance( clazz.getPackage().getName(), Thread.currentThread().getContextClassLoader() );
+        jaxbContext = JAXBContext.newInstance( clazz );
         jaxbContexts.put( clazz, jaxbContext );
         return jaxbContext;
     }
