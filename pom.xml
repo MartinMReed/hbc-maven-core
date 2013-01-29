@@ -9,8 +9,8 @@
 		<url>scm:git:git@github.com:hardisonbrewing/hbc-maven-core.git</url>
 		<connection>scm:git:git@github.com:hardisonbrewing/hbc-maven-core.git</connection>
 		<developerConnection>scm:git:git@github.com:hardisonbrewing/hbc-maven-core.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
 	<build>
 		<plugins>
 			<plugin>
