@@ -25,6 +25,7 @@ import org.codehaus.plexus.util.cli.CommandLineException;
 import org.codehaus.plexus.util.cli.CommandLineUtils;
 import org.codehaus.plexus.util.cli.Commandline;
 import org.codehaus.plexus.util.cli.StreamConsumer;
+import org.codehaus.plexus.util.cli.shell.Shell;
 import org.hardisonbrewing.maven.core.ProjectService;
 
 /**
@@ -75,7 +76,12 @@ public class CommandLineService {
         }
 
         Commandline commandLine = new Commandline();
-        commandLine.setShell( new org.hardisonbrewing.maven.core.cli.BourneShell() );
+
+        Shell shell = commandLine.getShell();
+        if ( shell != null && shell instanceof org.codehaus.plexus.util.cli.shell.BourneShell ) {
+            commandLine.setShell( new org.hardisonbrewing.maven.core.cli.BourneShell() );
+        }
+
         commandLine.setWorkingDirectory( ProjectService.getBaseDir() );
         commandLine.setExecutable( cmd.get( 0 ) );
 

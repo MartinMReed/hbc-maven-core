@@ -121,10 +121,8 @@ public class FileUtils extends org.codehaus.plexus.util.FileUtils {
 
     public static final boolean isCanonical( String filePath ) {
 
-        if ( filePath == null || filePath.length() == 0 ) {
-            return false;
-        }
-        return filePath.charAt( 0 ) != File.separatorChar;
+        File file = new File( filePath );
+        return !file.isAbsolute();
     }
 
     /**
