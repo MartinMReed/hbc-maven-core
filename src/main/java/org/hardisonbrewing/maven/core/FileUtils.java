@@ -51,6 +51,11 @@ public class FileUtils extends org.codehaus.plexus.util.FileUtils {
     public static final void ensureParentExists( String filePath ) {
 
         File file = new File( filePath );
+        ensureParentExists( file );
+    }
+
+    public static final void ensureParentExists( File file ) {
+
         file = file.getParentFile();
 
         if ( file != null && !file.exists() ) {
