@@ -17,4 +17,4 @@ OR add the following remote repository to download the latest snapshot:
 		</repository>
 	</repositories>
 
-Bamboo Status: [http://hardisonbrewing.org:8083/browse/MVNC](http://hardisonbrewing.org:8083/browse/MVNC)
+Continuous Integration: [Bamboo Status](http://bamboo.hardisonbrewing.org/browse/MVN-CRE)
