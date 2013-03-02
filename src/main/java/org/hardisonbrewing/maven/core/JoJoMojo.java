@@ -81,7 +81,7 @@ public abstract class JoJoMojo extends AbstractMojo {
             exitValue = CommandLineService.execute( commandLine, systemOut, systemErr );
         }
         catch (CommandLineException e) {
-            throw new IllegalStateException( e.getCause() );
+            throw new IllegalStateException( e );
         }
 
         if ( exitValue != 0 ) {
