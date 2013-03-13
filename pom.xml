@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.hardisonbrewing</groupId>
 	<artifactId>hbc-maven-core</artifactId>
-	<version>1.0.8.6</version>
+	<version>1.0.8.7-SNAPSHOT</version>
 	<name>${project.artifactId}</name>
 	<scm>
 		<url>scm:git:git@github.com:hardisonbrewing/hbc-maven-core.git</url>
 		<connection>scm:git:git@github.com:hardisonbrewing/hbc-maven-core.git</connection>
 		<developerConnection>scm:git:git@github.com:hardisonbrewing/hbc-maven-core.git</developerConnection>
-		<tag>1.0.8.6</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<build>
 		<plugins>
