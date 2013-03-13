@@ -22,11 +22,6 @@ import org.apache.maven.project.MavenProject;
 
 public class TargetDirectoryService {
 
-    /**
-     * The name of the target directory.
-     */
-    public static final String TARGET_DIRECTORY_NAME = "target";
-
     protected TargetDirectoryService() {
 
         // do nothing
@@ -46,7 +41,7 @@ public class TargetDirectoryService {
      */
     public static final File getTargetDirectory() {
 
-        return ProjectService.getOutputDirectory();
+        return ProjectService.getBuildDirectory();
     }
 
     /**
@@ -55,7 +50,7 @@ public class TargetDirectoryService {
      */
     public static final String getTargetDirectoryPath() {
 
-        return ProjectService.getOutputDirectoryPath();
+        return ProjectService.getBuildDirectoryPath();
     }
 
     public static final String resolveTargetFilePath( String filePath ) {

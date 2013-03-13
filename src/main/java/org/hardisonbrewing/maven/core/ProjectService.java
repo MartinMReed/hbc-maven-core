@@ -96,18 +96,18 @@ public class ProjectService {
      * 
      * @return
      */
-    public static final String getOutputDirectoryPath() {
+    public static final String getBuildDirectoryPath() {
 
-        return getProject().getBuild().getOutputDirectory();
+        return getProject().getBuild().getDirectory();
     }
 
     /**
      * 
      * @return
      */
-    public static final File getOutputDirectory() {
+    public static final File getBuildDirectory() {
 
-        return new File( getOutputDirectoryPath() );
+        return new File( getBuildDirectoryPath() );
     }
 
     /**
